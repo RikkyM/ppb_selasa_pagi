@@ -42,35 +42,31 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           Container(
-          height: 500,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            color: Colors.blue,
+            height: 500,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text('Nama : Rikky Mahendra'),
+                Text('NPM : 011200021'),
+                Text('Prodi : Informatika'),
+                Text('Jenis Kelamin : Laki-laki'),
+                Text('No Hp : 085155407399'),
+                Text('E-Mail : rikky.mahendra54@gmail.com'),
+              ],
+            ),
           ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            // crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text('Nama : Rikky Mahendra'),
-              Text('NPM : 011200021'),
-              Text('Prodi : Informatika'),
-              Text('Jenis Kelamin : Laki-laki'),
-              Text('No Hp : 085155407399'),
-              Text('E-Mail : rikky.mahendra54@gmail.com'),
-              
-            ],
-          ),
-        ),
-        Container(
-          height: 200,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            color: Colors.red
-          ),
-        )
+          Container(
+            height: 200,
+            width: double.infinity,
+            decoration: BoxDecoration(color: Colors.red),
+          )
         ],
       ),
     );
   }
 }
-
