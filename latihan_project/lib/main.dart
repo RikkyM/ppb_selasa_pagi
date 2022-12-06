@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_project/pages/menuitemlist.dart';
+import 'package:latihan_project/pages/mybottombar.dart';
 import 'pages/myactionbutton.dart';
+import 'pages/mybottombar.dart';
+import 'pages/foodlistview.dart';
+import 'pages/selecttypesection.dart';
+import 'pages/foodlistview.dart';
+import 'pages/myappbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +37,7 @@ class ProjectPage extends StatelessWidget {
     return Scaffold(
       floatingActionButton: MyActionButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: MyAppBar(),
+      bottomNavigationBar: MyBottomBar(),
       body: Container(
         child: ListView(
           children: [
@@ -45,11 +52,11 @@ class ProjectPage extends StatelessWidget {
             SizedBox(
               height: 16.0,
             ),
-            SekectTyoeSection(),
+            SelectTypeSection(),
             SizedBox(
               height: 16.0,
             ),
-            MenuItemList(),
+            MenuItemsList(),
           ],
         ),
       ),
