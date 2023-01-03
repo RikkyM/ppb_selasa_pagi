@@ -39,26 +39,7 @@ class ProjectPage extends StatelessWidget {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: MyBottomBar(),
       body: Container(
-        child: ListView(
-          children: [
-            SizedBox(
-              height: 16.0,
-            ),
-            MyAppBar(),
-            SizedBox(
-              height: 16.0,
-            ),
-            FoodListView(),
-            SizedBox(
-              height: 16.0,
-            ),
-            SelectTypeSection(),
-            SizedBox(
-              height: 16.0,
-            ),
-            MenuItemsList(),
-          ],
-        ),
+        child: text('asd', TextStyle(SizedBox))
       ),
     );
   }
